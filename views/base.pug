@@ -1,0 +1,19 @@
+doctype html
+html 
+  head 
+    meta(charset='UTF-8')
+    meta(name='viewport' width='device-width, initial-scale=1.0')
+    //- Remember to take notes on static files, how they are served and reference
+    link(href='https://fonts.googleapis.com/css?family=Lato:300,300i,700' rel='stylesheet')
+    link(rel='stylesheet' href='css/style.css')
+    link(rel="shortcut icon", href="img/favicon.png", type="image/png")
+    title Natours | #{title}
+  body
+    // HEADER
+    include _header
+    
+    // CONTENT
+    block content
+
+    //  FOOTER
+    include _footer
